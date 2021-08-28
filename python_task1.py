@@ -3,6 +3,7 @@ num =random.randrange(1000,10000)
 copy1=num
 n=int(input("guess the 4digit number:"))
 points =20
+#storing digits of random number
 nu4=int(num%10)
 nu3=int((num/10)%10)
 nu2=int((num/100)%10)
@@ -13,6 +14,7 @@ def checkdigitmatch(c,points,n,num,t):
     while (n != num):
         t += 1#number of tries variable
         c = 0#counter variable
+        #storing digits of guessed number
         n4 = int(n % 10)
         n3 = int((n / 10) % 10)
         n2 = int((n / 100) % 10)
